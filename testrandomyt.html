@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="testrandomyt.css">
+
+     <div class="box">
+    <a onclick="window.location.reload()"><img src="alea.png"
+        width="7%"
+        height="7%" /></a>
+    </div>
+    <div class="blockvideos">    
+        <script>
+
+        var videos = ["https://www.youtube.com/embed/A_E5qld0S6I?rel=0;&autoplay=1&mute=1&start=26&loop=1&controls=0&showinfo=0 frameborder='0'", "https://www.youtube.com/embed/EsFheWkimsU?rel=0;&autoplay=1&mute=1&start=53&loop=1&controls=0&showinfo=0 frameborder='0'", "https://www.youtube.com/embed/JXe-1dIlCw4?rel=0;&autoplay=1&mute=1&controls=0&start=28", "https://www.youtube.com/embed/E2sSvVCRI4s?rel=0;&autoplay=1&mute=1&controls=0&start=39&showinfo=0 frameborder='0'", "https://www.youtube.com/embed/w-m4UON2Hlk?rel=0;&autoplay=1&mute=1&controls=0&showinfo=0 frameborder='0'", "https://www.youtube.com/embed/XZVBoSteNYA?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/5COC4WMheH0?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/RbGjor6VQ24?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/aSyipwo0BzA?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/OsnRSr7LxII?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0&start=20 frameborder='0'", "https://www.youtube.com/embed/dSV6rD7i9t0?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0&start=13 frameborder='0'", "https://www.youtube.com/embed/qqhTPoZ6u64?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'","https://www.youtube.com/embed/iif1sA9jhXY?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/SO4tjI43Ob4?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/h_nTvenH1Gs?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/A2Wn3WHeVDw?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/GPqRyoH92s4?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/OzquNT_xjio?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0&start=18 frameborder='0'", "https://www.youtube.com/embed/1w5eAshOono?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'", "https://www.youtube.com/embed/1VFUKX1_1Jg?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'",  "https://www.youtube.com/embed/eZe4Q_58UTU?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0&start=15 frameborder='0'", "https://www.youtube.com/embed/mECvsV-Ah_8?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0&start=21 frameborder='0'", "https://www.youtube.com/embed/C796Mh7kMM8?rel=0;&autoplay=1&mute=1&showinfo=0&controls=0 frameborder='0'"]
+       
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('src', randomVideoUrl);
+            player.setAttribute('width', '100%');
+            player.setAttribute('height', '700');
+            playerDiv.appendChild(player);
+        };
+    </script>
+    </div>
+
+</head>
+
+<body>
+    <div id="random_player" />
+    <body style="background-color:black;">
+</body>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.box {
+	position: 	absolute;
+	z-index: 10;
+}
+.blockvideos{
+	position: fixed;
+	z-index: 1;
+	padding-right: 0px:
+	padding-left: 0px;
+
+}
